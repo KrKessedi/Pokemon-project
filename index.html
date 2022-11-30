@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pokemon</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="navbar__inner">
+				<img
+					src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/d98dde45d242734.png"
+					class="navbar__logo"
+					alt="logo"
+				/>
+				<div class="navbar__block-right">
+					<button class="navbar__btn active">Search</button>
+					<button class="navbar__btn">Favorites</button>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="filter">
+				<div class="filter-search">
+					<h1 class="filter-search__title">Search Pokemon</h1>
+					<div class="filter-search__form">
+						<input
+							type="text"
+							id="filter-search__input"
+							placeholder="Search pokemon"
+						/>
+						<button id="filter-search__btn"></button>
+					</div>
+				</div>
+				<div class="filter-selects">
+					<div class="fa-select-wrapper">
+						<div class="fa-select" data-value="">Category</div>
+						<ul class="fa-options"></ul>
+					</div>
+					<div class="sort-wrapper">
+						<div class="sort-select" data-value="">Sort</div>
+						<ul class="sort-options">
+							<li>None</li>
+							<li>A-Z</li>
+							<li>Z-A</li>
+						</ul>
+					</div>
+					<input type="number" id="limit" />
+					<button id="filter-btn">Click</button>
+				</div>
+			</div>
+			<div class="container__list"></div>
+			<div class="pagination"></div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
